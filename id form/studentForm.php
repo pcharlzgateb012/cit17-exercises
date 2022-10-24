@@ -6,6 +6,9 @@
 	<title>STUDENT REGISTRATION FORM</title>
 
 	<style type="text/css">
+
+
+
 input:focus{
 outline: none;
 box-shadow: 0px 0px 10px turquoise;
@@ -19,26 +22,67 @@ box-shadow: 0px 0px 10px turquoise;
 border:1px solid #5AB0DB;
 
 }
+textarea:focus{
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB;}
 
+textarea:hover {
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB; 
+}
+
+select:focus{
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB;}
+
+select:hover {
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB;
+}
+input[type="submit"], input[type="reset"],input[type="text"], textarea[name], select[name]{
+  font-family: Century Gothic;
+  border-radius: 15pt;
+  border: none;
+  color: black;
+
+
+
+}
 input[type="reset"]:hover {
 outline: none;
 box-shadow: 0px 0px 10px turquoise;
 border:1px solid #5AB0DB;
+background-color:green;
+color: white;
 
 }
 
+input[type="reset"],input[type="submit"]{
+  font-weight: bold;
+  background-color: white;
+  outline: 1px solid white;
+  width: 20em;  height: 2em;
+}
 input[type="submit"]:hover {
 outline: none;
 box-shadow: 0px 0px 10px turquoise;
 border:1px solid #5AB0DB;
+background-color:green;
+color: white;
+
 }
+
     form{
       background-image: url(https://www.bworldonline.com/wp-content/uploads/2021/07/University-of-Cordilleras.jpg);
     }
     h1{
       text-align: center;
       text-shadow: black;
-      color: darkgreen;
+      color: #023020;
       font-family: Century Gothic;
       font-style: normal;
       font-size: 30pt;
@@ -62,15 +106,16 @@ table{
   font-style: normal;
   font-weight: thin;
   text-align:; 
-  background-color: darkgreen;
+  background-color: #023020;
   border-collapse: collapse;
-  border: 5px solid yellowgreen;
+  border: 3px solid green;
+
 
 
 
 }
 table.inner{
-  border: 0px
+  border: 5px
 }
 	</style>
 </head>
@@ -81,13 +126,11 @@ table.inner{
 <tr>
 <td>FIRST NAME</td>
 <td><input type="text" name="First" maxlength="30"/>
-(max 30 characters a-z and A-Z)
 </td>
 </tr>
 <tr>
 <td>LAST NAME</td>
 <td><input type="text" name="Last" maxlength="30"/>
-(max 30 characters a-z and A-Z)
 </td>
 </tr>
 <tr>
@@ -111,7 +154,7 @@ table.inner{
 <option value="December">Dec</option>
 </select>
 
-<select name="Birthday" id="Birthday_Day">
+<select name="Day" id="Birthday_Day">
 <option value="-1">Day:</option>
 <option value="1">1</option>
 <option value="2">2</option>
@@ -204,24 +247,23 @@ Others <input type="radio" name="Gender" value="Others" />
 <tr>
 <td>CITY/MUNICIPALITY</td>
 <td><input type="text" name="CityMunicipality" maxlength="30" />
-(max 30 characters a-z and A-Z)
+</td>
+</tr>
+<tr>
+<td>PROVINCE</td>
+<td><input type="text" name="Province" maxlength="30"  />
+</td>
+</tr>
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="Country" maxlength="30" />
 </td>
 </tr>
 <tr>
 <td>POSTAL CODE</td>
 <td><input type="text" name="PostalCode" maxlength="4" />
 (4 digit number)
-</td>
-</tr>
-<tr>
-<td>PROVINCE</td>
-<td><input type="text" name="Province" maxlength="30" />
-(max 30 characters a-z and A-Z)
-</td>
-</tr>
-<tr>
-<td>COUNTRY</td>
-<td><input type="text" name="Country" /></td>
+</td> 
 </tr>
 <tr>
 <td> PERMANENT ADDRESS <br /><br /><br /></td>
@@ -252,7 +294,8 @@ Others <input type="radio" name="Gender" value="Others" />
 </tr>
 <tr>
 <td colspan="2" align="center">
-<input type="submit" value="Submit" >
+<input type="submit" value="Submit" ><br>
+</br>
 <input type="reset" value="Reset">
 </td>
 </tr>
@@ -263,7 +306,7 @@ Others <input type="radio" name="Gender" value="Others" />
  <?php
  $First = $_GET["First"];
  $Last = $_GET["Last"];
- $Birthday = $_GET["Birthday"]; 
+ $Birthday = $_GET["Day"]; 
  $Month = $_GET["Month"];
  $Year = $_GET["Year"]; 
  $IDNumber = $_GET["IDNumber"];
@@ -278,11 +321,11 @@ Others <input type="radio" name="Gender" value="Others" />
  $CourseDepartment = $_GET["CourseDepartment"];
 
  $f = fopen("info.txt" , "a");
- fwrite($f, "First Name:" . $First . "\n" . "Last Name:" . $Last . "\n" . "Birthday:" . $Birthday . "\n"
-. "Month:" . $Month . "\n" . "Year:" . $Year . "\n" . "ID Number:" . $IDNumber . "\n" . "Contact Number:" . $ContactNumber . "\n" 
-. "Gender:" . $Gender . "\n"  . "City/Municipality:" . $CityMunicipality
-.  "\n" . "Province:" . $Province . "\n" . "Postal Code:" . $PostalCode . "\n" .  "Country:" . $Country . "\n" . "Permanent Address:" . $PermanentAddress . "\n" . "Current Address:" . $CurrentAddress . "\n"
-. "Course/Department:" . $CourseDepartment . "\n");
+ fwrite($f, "First Name: " . $First . "\n" . "Last Name: " . $Last . "\n" . "Month: " . $Month . "\n"
+. "Day: " . $Birthday . "\n" . "Year: " . $Year . "\n" . "ID Number: " . $IDNumber . "\n" . "Contact Number: " . $ContactNumber . "\n" 
+. "Gender: " . $Gender . "\n"  . "City/Municipality: " . $CityMunicipality
+.  "\n" . "Province: " . $Province . "\n" . "Country: " . $Country . "\n" .  "Postal Code: " . $PostalCode . "\n" . "Permanent Address: " . $PermanentAddress . "\n" . "Current Address: " . $CurrentAddress . "\n"
+. "Course/Department: " . $CourseDepartment . "\n");
  fclose($f);
  ?>
 </body>
