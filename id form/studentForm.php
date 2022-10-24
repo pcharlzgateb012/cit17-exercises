@@ -5,127 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>STUDENT REGISTRATION FORM</title>
 
-	<style type="text/css">
-
-
-
-input:focus{
-outline: none;
-box-shadow: 0px 0px 10px turquoise;
-border:1px solid #5AB0DB;
-
-}
-
-input:hover {
-outline: none;
-box-shadow: 0px 0px 10px turquoise;
-border:1px solid #5AB0DB;
-
-}
-textarea:focus{
-outline: none;
-box-shadow: 0px 0px 10px turquoise;
-border:1px solid #5AB0DB;}
-
-textarea:hover {
-outline: none;
-box-shadow: 0px 0px 10px turquoise;
-border:1px solid #5AB0DB; 
-}
-
-select:focus{
-outline: none;
-box-shadow: 0px 0px 10px turquoise;
-border:1px solid #5AB0DB;}
-
-select:hover {
-outline: none;
-box-shadow: 0px 0px 10px turquoise;
-border:1px solid #5AB0DB;
-}
-input[type="submit"], input[type="reset"],input[type="text"], textarea[name], select[name]{
-  font-family: Century Gothic;
-  border-radius: 15pt;
-  border: none;
-  color: black;
-
-
-
-}
-input[type="reset"]:hover {
-outline: none;
-box-shadow: 0px 0px 10px turquoise;
-border:1px solid #5AB0DB;
-background-color:green;
-color: white;
-
-}
-
-input[type="reset"],input[type="submit"]{
-  font-weight: bold;
-  background-color: white;
-  outline: 1px solid white;
-  width: 20em;  height: 2em;
-}
-input[type="submit"]:hover {
-outline: none;
-box-shadow: 0px 0px 10px turquoise;
-border:1px solid #5AB0DB;
-background-color:green;
-color: white;
-
-}
-
-    form{
-      background-image: url(https://www.bworldonline.com/wp-content/uploads/2021/07/University-of-Cordilleras.jpg);
-    }
-    h1{
-      text-align: center;
-      text-shadow: black;
-      color: #023020;
-      font-family: Century Gothic;
-      font-style: normal;
-      font-size: 30pt;
-      font-weight: bold;
-    }
-
-		h3{
-  font-family: Century Gothic; 
-  font-size: 25pt;         
-  font-style: normal; 
-  font-weight: bold; 
-  color:yellowgreen;
-  text-align: center; 
-  text-decoration: underline
-}
-
-table{
-  font-family: Century Gothic; 
-  color:white; 
-  font-size: 11pt; 
-  font-style: normal;
-  font-weight: thin;
-  text-align:; 
-  background-color: #023020;
-  border-collapse: collapse;
-  border: 3px solid green;
-
-
-
-
-}
-table.inner{
-  border: 5px
-}
-	</style>
 </head>
 <body>
  <form action="studentForm.php" method="get">
 <table align="center" cellpadding = "10">
-  <h1>STUDENT REGISTRATION FORM</h1> 
+<h1>STUDENT REGISTRATION FORM</h1>
+
 <tr>
 <td>FIRST NAME</td>
 <td><input type="text" name="First" maxlength="30"/>
+</td>
+</tr>
+<tr>
+<td>MIDDLE NAME</td>
+<td><input type="text" name="Middle" maxlength="30"/>
 </td>
 </tr>
 <tr>
@@ -305,6 +198,7 @@ Others <input type="radio" name="Gender" value="Others" />
  
  <?php
  $First = $_GET["First"];
+ $Middle = $_GET["Middle"];
  $Last = $_GET["Last"];
  $Birthday = $_GET["Day"]; 
  $Month = $_GET["Month"];
@@ -321,7 +215,7 @@ Others <input type="radio" name="Gender" value="Others" />
  $CourseDepartment = $_GET["CourseDepartment"];
 
  $f = fopen("info.txt" , "a");
- fwrite($f, "First Name: " . $First . "\n" . "Last Name: " . $Last . "\n" . "Month: " . $Month . "\n"
+ fwrite($f, "First Name: " . $First . "\n" . "Middle Name: " . $Middle . "\n" ."Last Name: " . $Last . "\n" . "Month: " . $Month . "\n"
 . "Day: " . $Birthday . "\n" . "Year: " . $Year . "\n" . "ID Number: " . $IDNumber . "\n" . "Contact Number: " . $ContactNumber . "\n" 
 . "Gender: " . $Gender . "\n"  . "City/Municipality: " . $CityMunicipality
 .  "\n" . "Province: " . $Province . "\n" . "Country: " . $Country . "\n" .  "Postal Code: " . $PostalCode . "\n" . "Permanent Address: " . $PermanentAddress . "\n" . "Current Address: " . $CurrentAddress . "\n"
@@ -330,3 +224,116 @@ Others <input type="radio" name="Gender" value="Others" />
  ?>
 </body>
 </html>
+<style type="text/css">
+
+
+
+input:focus{
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB;
+
+}
+
+input:hover {
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB;
+
+}
+textarea:focus{
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB;}
+
+textarea:hover {
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB; 
+}
+
+select:focus{
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB;}
+
+select:hover {
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB;
+}
+input[type="submit"], input[type="reset"],input[type="text"], textarea[name], select[name]{
+  font-family: Century Gothic;
+  border-radius: 15pt;
+  border: none;
+  color: black;
+
+
+
+}
+input[type="reset"]:hover {
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB;
+background-color:green;
+color: white;
+
+}
+
+input[type="reset"],input[type="submit"]{
+  font-weight: bold;
+  background-color: white;
+  outline: 1px solid white;
+  width: 20em;  height: 2em;
+}
+input[type="submit"]:hover {
+outline: none;
+box-shadow: 0px 0px 10px turquoise;
+border:1px solid #5AB0DB;
+background-color:green;
+color: white;
+
+}
+
+    form{
+      background-image: url(https://www.bworldonline.com/wp-content/uploads/2021/07/University-of-Cordilleras.jpg);
+    }
+    h1{
+      text-align: center;
+      text-shadow: black;
+      color: #023020;
+      font-family: Century Gothic;
+      font-style: normal;
+      font-size: 30pt;
+      font-weight: bold;
+    }
+
+    h3{
+  font-family: Century Gothic; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:yellowgreen;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Century Gothic; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: thin;
+  text-align:; 
+  background-color: #023020;
+  border-collapse: collapse;
+  border: 3px solid green;
+
+
+
+
+}
+table.inner{
+  border: 5px
+}
+  </style>
