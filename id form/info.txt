@@ -29,3 +29,78 @@ Country:Philippines
 Permanent Address:#56 Ipil-ipil street Castro, Sudipen La union
 Current Address:#90 Holy Ghost Ext. Rd. Imelda Village, Baguio City
 Course/Department:Information Technology & Computer Science
+First Name:Peter Charles
+Last Name:Gat-eb
+Birthday:12
+Month:November
+Year:1996
+ID Number:131665272
+Contact Number:9771277941
+Gender:Male
+City/Municipality:Sudipen
+Province:La union
+Postal Code:2520
+Country:Philippines
+Permanent Address:la union
+Current Address:baguio city
+Course/Department:Information Technology & Computer Science
+First Name:Peter Charles
+Last Name:Gat-eb
+Birthday:12
+Month:November
+Year:1996
+ID Number:131665272
+Contact Number:9771277941
+Gender:Male
+City/Municipality:Sudipen
+Province:La union
+Postal Code:2520
+Country:Philippines
+Permanent Address:la union
+Current Address:baguio city
+Course/Department:Information Technology & Computer Science
+First Name:Peter Charles
+Last Name:Gat-eb
+Birthday:12
+Month:November
+Year:1996
+ID Number:131665272
+Contact Number:9771277941
+Gender:Male
+City/Municipality:Sudipen
+Province:La union
+Postal Code:2520
+Country:Philippines
+Permanent Address:la union
+Current Address:baguio city
+Course/Department:Information Technology & Computer Science
+First Name:Peter Charles
+Last Name:Gat-eb
+Birthday:12
+Month:November
+Year:1996
+ID Number:131665272
+Contact Number:9771277941
+Gender:Male
+City/Municipality:Sudipen
+Province:La union
+Postal Code:2520
+Country:Philippines
+Permanent Address:la union
+Current Address:baguio city
+Course/Department:Information Technology & Computer Science
+First Name:Frelyn
+Last Name:Sison
+Birthday:27
+Month:December
+Year:1997
+ID Number:181448
+Contact Number:9771277941
+Gender:Female
+City/Municipality:Sta. Maria
+Province:Ilocos Sur
+Postal Code:2705
+Country:france
+Permanent Address:Ilocos Sur
+Current Address:Baguio City
+Course/Department:Business Administration

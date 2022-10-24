@@ -221,7 +221,7 @@ Others <input type="radio" name="Gender" value="Others" />
 </tr>
 <tr>
 <td>COUNTRY</td>
-<td><input type="text" name="Country" value="Philippines" readonly="readonly" /></td>
+<td><input type="text" name="Country" /></td>
 </tr>
 <tr>
 <td> PERMANENT ADDRESS <br /><br /><br /></td>
