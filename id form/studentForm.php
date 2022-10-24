@@ -13,17 +13,17 @@
 
 <tr>
 <td>FIRST NAME</td>
-<td><input type="text" name="First" maxlength="30"/>
+<td><input type="text" name="First" />
 </td>
 </tr>
 <tr>
 <td>MIDDLE NAME</td>
-<td><input type="text" name="Middle" maxlength="30"/>
+<td><input type="text" name="Middle" />
 </td>
 </tr>
 <tr>
 <td>LAST NAME</td>
-<td><input type="text" name="Last" maxlength="30"/>
+<td><input type="text" name="Last" />
 </td>
 </tr>
 <tr>
@@ -52,7 +52,6 @@
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
- 
 <option value="4">4</option>
 <option value="5">5</option>
 <option value="6">6</option>
@@ -62,7 +61,6 @@
 <option value="10">10</option>
 <option value="11">11</option>
 <option value="12">12</option>
- 
 <option value="13">13</option>
 <option value="14">14</option>
 <option value="15">15</option>
@@ -72,7 +70,6 @@
 <option value="19">19</option>
 <option value="20">20</option>
 <option value="21">21</option>
- 
 <option value="22">22</option>
 <option value="23">23</option>
 <option value="24">24</option>
@@ -82,14 +79,10 @@
 <option value="28">28</option>
 <option value="29">29</option>
 <option value="30">30</option>
- 
 <option value="31">31</option>
 </select>
  
-
- 
-<select name="Year" id="Birthday_Year">
- 
+<select name="Year" id="Birthday_Year"> 
 <option value="-1">Year:</option>
 <option value="2012">2012</option>
 <option value="2011">2011</option>
@@ -103,8 +96,7 @@
 <option value="2003">2003</option>
 <option value="2002">2002</option>
 <option value="2001">2001</option>
-<option value="2000">2000</option>
- 
+<option value="2000">2000</option> 
 <option value="1999">1999</option>
 <option value="1998">1998</option>
 <option value="1997">1997</option>
@@ -118,18 +110,23 @@
 </select>
 </td>
 </tr>
+
 <tr>
+
 <td>ID NUMBER</td>
-<td><input type="text" name="IDNumber" maxlength="11" /></td>
+<td><input type="text" name="IDNumber" /></td>
 </tr>
+
 <tr>
+
 <td>CONTACT NUMBER (+63)</td>
 <td>
-<input type="text" name="ContactNumber" maxlength="10" />
-(10 digit number)
+<input type="text" name="ContactNumber" />
 </td>
 </tr>
+
 <tr>
+
 <td>GENDER</td>
 <td>
 Male <input type="radio" name="Gender" value="Male" />
@@ -137,35 +134,48 @@ Female <input type="radio" name="Gender" value="Female" />
 Others <input type="radio" name="Gender" value="Others" />
 </td>
 </tr>
+
 <tr>
+
 <td>CITY/MUNICIPALITY</td>
-<td><input type="text" name="CityMunicipality" maxlength="30" />
+<td><input type="text" name="CityMunicipality" />
 </td>
 </tr>
+
 <tr>
+
 <td>PROVINCE</td>
-<td><input type="text" name="Province" maxlength="30"  />
+<td><input type="text" name="Province" />
 </td>
 </tr>
+
 <tr>
+
 <td>COUNTRY</td>
-<td><input type="text" name="Country" maxlength="30" />
+<td><input type="text" name="Country" />
 </td>
 </tr>
+
 <tr>
-<td>POSTAL CODE</td>
-<td><input type="text" name="PostalCode" maxlength="4" />
-(4 digit number)
+
+<td>ZIP CODE</td>
+<td><input type="text" name="ZipCode" maxlength="11" />
 </td> 
 </tr>
+
 <tr>
+
 <td> PERMANENT ADDRESS <br /><br /><br /></td>
 <td><textarea name="PermanentAddress" rows="4" cols="30"></textarea></td>
 </tr>
+
 <tr>
+
 <td> CURRENT ADDRESS <br /><br /><br /></td>
-<td><textarea name="CurrentAddress" rows="4" cols="30"></textarea></td>
+<td><textarea name="CurrentAddress" rows="4" cols="30"></textarea>
+</td>
 </tr>
+
 <td>COURSE and DEPARTMENT</td>
 
 <td>
@@ -185,7 +195,9 @@ Others <input type="radio" name="Gender" value="Others" />
 </select>
 </td>
 </tr>
+
 <tr>
+
 <td colspan="2" align="center">
 <input type="submit" value="Submit" ><br>
 </br>
@@ -207,7 +219,7 @@ Others <input type="radio" name="Gender" value="Others" />
  $ContactNumber = $_GET["ContactNumber"];
  $Gender = $_GET["Gender"];
  $CityMunicipality = $_GET["CityMunicipality"];
- $PostalCode = $_GET["PostalCode"];
+ $ZipCode = $_GET["ZipCode"];
  $Province = $_GET["Province"];
  $Country = $_GET["Country"];
  $PermanentAddress = $_GET["PermanentAddress"];
@@ -218,9 +230,10 @@ Others <input type="radio" name="Gender" value="Others" />
  fwrite($f, "First Name: " . $First . "\n" . "Middle Name: " . $Middle . "\n" ."Last Name: " . $Last . "\n" . "Month: " . $Month . "\n"
 . "Day: " . $Birthday . "\n" . "Year: " . $Year . "\n" . "ID Number: " . $IDNumber . "\n" . "Contact Number: " . $ContactNumber . "\n" 
 . "Gender: " . $Gender . "\n"  . "City/Municipality: " . $CityMunicipality
-.  "\n" . "Province: " . $Province . "\n" . "Country: " . $Country . "\n" .  "Postal Code: " . $PostalCode . "\n" . "Permanent Address: " . $PermanentAddress . "\n" . "Current Address: " . $CurrentAddress . "\n"
+.  "\n" . "Province: " . $Province . "\n" . "Country: " . $Country . "\n" .  "Zip Code: " . $ZipCode . "\n" . "Permanent Address: " . $PermanentAddress . "\n" . "Current Address: " . $CurrentAddress . "\n"
 . "Course/Department: " . $CourseDepartment . "\n");
  fclose($f);
+
  ?>
 </body>
 </html>

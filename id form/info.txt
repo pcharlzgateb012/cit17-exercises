@@ -10,7 +10,7 @@ Gender: Male
 City/Municipality: Sudipen
 Province: La union
 Country: Philippines
-Postal Code: 2520
-Permanent Address: #56 Ipil-ipil Street Castro, Sudipen La union 2520, Philippines
-Current Address: #90 Holy Ghost Ext. Rd. Imelda Village, Baguio City Benguet 2600, Philippines
+Zip Code: 2520
+Permanent Address: # 56 Ipil-ipil Street Castro, Sudipen, La union 2520, Philippines
+Current Address: # 90 Holy Ghost Ext. Rd. Imelda Village, Baguio City Benguet 2600, Philippines
 Course/Department: Information Technology & Computer Science
